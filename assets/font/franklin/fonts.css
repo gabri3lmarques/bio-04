@@ -1,0 +1,20 @@
+/* mais fina e mais espaçada */
+@font-face {
+  font-family: "franklin gothic book";
+  src: url(franklin-gothic-book.ttf);
+}
+/* mais grossa e mais espaçada */
+@font-face {
+  font-family: "franklin gothic demi";
+  src: url(franklin-gothic-demi.ttf);
+}
+/* mnédia e mais espaçada */
+@font-face {
+  font-family: "franklin gothic medium";
+  src: url(franklin-gothic-medium.ttf);
+}
+/* mais grossa e menos espaçada */
+@font-face {
+  font-family: "franklin gothic";
+  src: url(franklin-gothic.ttf);
+}

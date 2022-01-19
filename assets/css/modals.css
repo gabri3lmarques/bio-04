@@ -1,0 +1,47 @@
+/* modal. */
+.generic-modal-wraper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 101;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  transition: 400ms;
+  align-items: center;
+  justify-content: center;
+}
+
+.generic-modal-content {
+  position: relative;
+  box-shadow: 12px 12px #9fd6f2;
+  width: 800px;
+  max-height: 90%;
+  max-width: 90%;
+  padding: 40px;
+  background: linear-gradient(to right, #81c1dd, #2f7fa3);
+  display: none;
+  overflow-y: auto;
+}
+
+.generic-modal-content img.close-g-modal {
+  position: absolute;
+  width: 60px;
+  transition: 400ms;
+  top: 20px;
+  right: 20px;
+}
+
+.generic-modal-content img.close-g-modal:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.generic-modal-content h4 {
+  font-size: 30px;
+}

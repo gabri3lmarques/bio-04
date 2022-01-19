@@ -1,0 +1,265 @@
+
+.lab-btn-container {
+  width: 631px;
+  height: 501px;
+  background-image: url(../../img/section-3/botao-lab.png);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lab-btn {
+  width: 309px;
+  height: 91px;
+  background-color: rgba(45, 146, 192, 0.4);
+  background-image: url(../../img/section-3/Botao_lab2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+#myModal {
+  background-color: #b9e2f5;
+}
+
+.lab-btn:hover {
+  background-color: #2d92c0;
+  margin-top: -20px;
+  box-shadow: 0 10px 10px -5px rgba(0,0,0,0.6);
+}
+
+/* lab modal */
+
+/* The Modal (background) */
+.lab-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.lab-modal-content {
+  position: relative;
+  display: block;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #cfe9f5;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.lab-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+.organela-01 {
+  position: absolute;
+  right: 31.3%;
+  top: 75.3%;
+  width: 4.5vh;
+}
+
+.organela-02 {
+  position: absolute;
+  right: 26.4%;
+  top: 75.5%;
+  width: 4.5vh;
+}
+
+.organela-03 {
+  position: absolute;
+  right: 21.4%;
+  top: 76%;
+  width: 4.5vh;
+}
+
+.organela-04 {
+  position: absolute;
+  right: 16.4%;
+  top: 75.5%;
+  width: 4.5vh;
+}
+
+.organela-05 {
+  position: absolute;
+  right: 28.3%;
+  top: 81.3%;
+  width: 4.5vh;
+}
+
+.organela-06 {
+  position: absolute;
+  right: 22.8%;
+  top: 81.3%;
+  width: 4.5vh;
+}
+
+.organela-07 {
+  position: absolute;
+  right: 17.2%;
+  top: 80.8%;
+  width: 4.5vh;
+}
+
+.organela-08 {
+  position: absolute;
+  right: 12.2%;
+  top: 80.8%;
+  width: 4.5vh;
+}
+
+
+.title-lab {
+  color: #004f53;
+  font-size: 3vw;
+  position: absolute;
+  left: 3vh;
+}
+
+.lab-btn-org {
+  transition: 300ms;
+}
+
+.lab-btn-org:hover {
+  transform: scale(1.1) translateY(-5px);
+  cursor: pointer;
+}
+
+.warning-lab {
+  background-color: #3f3f3f;
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  transition: 2s;
+}
+
+.microscopio-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(1, 43, 54, 0.8);
+  background-image: url(../../img/lab/lamina-bg.png);
+  background-position: center top 28%;
+  background-repeat: no-repeat;
+  background-size: 46%;
+  opacity: 0;
+  pointer-events: none;
+  transition: 400ms;
+}
+
+.org-big {
+  max-width: 30%;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  width: 100px;
+  height: 100px;
+  background-image: url(../../img/lab/btn-next.png);
+  font-size: 0;
+  background-size: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 5%;
+  position: absolute;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  width: 100px;
+  height: 100px;
+  background-image: url(../../img/lab/btn-prev.png);
+  background-size: 100%;
+  font-size: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 5%;
+  position: absolute;
+}
+
+
+.owl-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-micro {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.close-micro:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animateout {
+  from {top:0; opacity:1}
+  to {top:-300px; opacity:0}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  transition: 300ms;
+  cursor: pointer;
+  width: 19.73vw;
+}
+
+.close:hover,
+.close:focus {
+  top: 30px;
+  box-shadow: 0 10px 10px -5px rgba(0,0,0,0.6);
+}
+
+.lab-modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.lab-modal-body {padding: 2px 16px;}
+
+.lab-modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+/* lab modal */ 
+
+/* laboratório */ 
