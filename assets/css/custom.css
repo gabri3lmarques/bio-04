@@ -554,6 +554,9 @@ div.clicavel img.clicavel:hover {
 
 .video iframe {
   border: 2px solid #81c1dd;
+  max-width: 100%;
+  width: 560px;
+  height: 315px;
 }
 /* animações */
 
