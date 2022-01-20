@@ -659,7 +659,7 @@ div.clicavel img.clicavel:hover {
   }
   .infografico-mobi {
     display: block;
-    margin: 100px;
+    margin-top: 100px;
   }
 }
 
