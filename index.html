@@ -31,7 +31,9 @@
 			<!-- nav -->
                             
 				<nav class="main-menu" data-aos="fade-right" duration="800" data-aos-easing="ease" data-aos-delay="400">
-					<ul>
+					
+					<ul style="position: relative;">
+						<img id="close-main-menu" src="./img/template/fecha-menu.png" alt="">
 						<li>
 							<a href="#one" class="menu-a active" >introdução</a>
 						</li>
@@ -72,32 +74,49 @@
 				</nav>
 				<!-- nav -->
 
+				
+
         <section class="paginas">
 					<div class="pagina container">
 						<!-- section -->
 						<div class="section one" id="one">
-							<button data-pdf="true"  name="button" class="bt-print bto-imprimir no-print">imprimir</button>   
+							
 							<img class="molecula-1 no-print" src="./img/section-1/molrcaula.png" alt="" aria-hidden="true">
 							<img class="molecula-2 no-print" src="./img/section-1/molecula-bg.png" aria-hidden="true">
 							<h2 class="acessivel">Origem e evolução das células</h2>
-							<div class="course-title">
-								<img class="responsive no-print" src="./img/section-1/course-title.png" alt="Moléculas, células e tecidos" aria-hidden="true">
+							<div class="course-title no-print">
+								<img class="img-04" src="./img/section-1/05-liga.png" alt="">
+								<img class="img-02" src="./img/section-1/04-liga.png" alt="">
+								<img class="img-01" src="./img/section-1/01-moleculas.png" alt="">
+								<img class="img-03" src="./img/section-1/02-celulas.png" alt="">
+								<img class="img-05" src="./img/section-1/03-tecidos.png" alt="">
+								<img class="title-static" src="./img/section-1/titulo-novo.png" alt="">
+								<!-- <img class="responsive no-print" src="./img/section-1/course-title.png" alt="Moléculas, células e tecidos" aria-hidden="true"> -->
 							</div>
 							<div class="box">
 								<p>Você já parou para pensar sobre como os seres vivos conseguem sobreviver? Até mesmo pequenos seres — invisíveis — têm mecanismos de sobrevivência e adaptação aos mais diferentes ambientes. Entre esses mecanismos, o principal deles é o fato de os seres vivos serem formados por células, que é a estrutura que forma, sustenta, equilibra e comanda todas as atividades vitais dentro de um organismo.</p>
-								<img class="icon" src="./img/template/icon-refletir.png" alt="icone de reflexão">
+								<img class="icon no-print" src="./img/template/icon-refletir.png" alt="icone de reflexão">
 							</div>
 						</div>
 						<!-- section -->
 
 						<!-- section 2 -->
 						<div class="section" id="two">
-							<h3 id="title-2">Origem e evolução das células</h3>
-							<h4>Estrutura e fisiologia celular: membrana, citoplasma e núcleo</h4>
+							<h3 id="title-2">Estrutura e fisiologia celular: membrana, citoplasma e núcleo</h3>
 							<p>As células são unidades básicas e fundamentais para a existência da vida. São como se fossem pequenas máquinas que facilitam e sustentam cada processo dentro de um organismo vivo. No interior de cada célula, acontecem as reações químicas necessárias à manutenção e ao desenvolvimento da vida. As células desempenham diversas funções, como fornecer a estrutura básica para o corpo, absorver nutrientes, permitir a reprodução, entre outras.</p>
 							<p>As células eucarióticas têm basicamente três principais regiões celulares distintas: a membrana, o citoplasma e o núcleo. Essas três estruturas são consideradas peças básicas e fundamentais de todas as células eucariontes, que compreendem fungos, plantas, animais e seres humanos, desempenhando funções importantes nas células, conforme você verá a seguir.</p>
-							
+							<p>Clique ou toque para visualizar o conteúdo.</p>
 							<!-- panel -->
+							<!-- acessivel -->
+							<div class="acessivel" aria-hidden="false">
+								<p><b>Membrana</b></p>
+								<p>Estrutura que reveste, protege e delimita as células. É responsável pela passagem, entrada e saída de substâncias na célula.</p>
+								<p><b>Citoplasma</b></p>
+								<p>É o local onde todas as organelas celulares e o núcleo estão situados. Formado por água, sais minerais e proteínas, conferindo um aspecto gelatinoso ao interior da célula.</p>
+								<p><b>Núcleo</b></p>
+								<p>Responsável por comandar todas as atividades da célula, realizar os processos de divisão celular e armazenar o material genético (DNA).</p>								
+							</div>
+							<!-- acessivel -->
 							<div class="cell-panel no-print" aria-hidden="true">
 								<img id="section-2-panel" src="./img/section-2/painel.png" alt="Workplace" usemap="#painel-clicavel" width="616" height="401">
 								<map name="painel-clicavel">
@@ -128,16 +147,6 @@
 									<h4>Núcleo</h4>
 									<p>Responsável por comandar todas as atividades da célula, realizar os processos de divisão celular e armazenar o material genético (DNA).</p>
 							</div>
-							<!-- acessivel -->
-							<div class="acessivel">
-								<p><b>Membrana</b></p>
-								<p>Estrutura que reveste, protege e delimita as células. É responsável pela passagem, entrada e saída de substâncias na célula.</p>
-								<p><b>Citoplasma</b></p>
-								<p>É o local onde todas as organelas celulares e o núcleo estão situados. Formado por água, sais minerais e proteínas, conferindo um aspecto gelatinoso ao interior da célula.</p>
-								<p><b>Núcleo</b></p>
-								<p>Responsável por comandar todas as atividades da célula, realizar os processos de divisão celular e armazenar o material genético (DNA).</p>								
-							</div>
-							<!-- acessivel -->
 						</div>
 						<!-- section 2 -->
 
@@ -146,11 +155,7 @@
 							<div class="centered-title">
 								<h3 id="id="title-3>Aspectos bioquímicos <br>das estruturas celulares</h3>
 							</div>
-							<div class="lab-btn-container no-print" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" aria-hidden="true">
-								<div class="lab-btn" id="myBtn">
-								</div>
-							</div>
-							<div class="no-print lab-mobile">
+							<div class="lab-mobile">
 								<p><b>Mitocôndria</b></p>
 								<p>Respiração celular e produção de energia</p>
 								<figure>
@@ -192,6 +197,11 @@
 									<img class="responsive" src="./img/lab/08.png" alt="">
 								</figure>
 							</div>
+							<p>A organização celular é complexa devido à grande quantidade de organelas específicas. Para conhecê-las, acesse o laboratório virtual.</p>
+							<div class="lab-btn-container no-print" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" aria-hidden="true">
+								<div class="lab-btn" id="myBtn">
+								</div>
+							</div>
 							<img class="molucula-section-3 no-print" src="./img/section-3/molucula-section-3.png" alt="">
 							<img class="circle no-print" src="./img/section-3/circle.png" alt="">
 							<!-- audio lab -->
@@ -226,17 +236,6 @@
 							<h3 id="title-4">Envoltórios celulares: parede celular e membrana plasmática</h3>
 							<p>Parede celular e membrana plasmática são estruturas chamadas de envoltórios celulares, ou seja, protegem, revestem e delimitam as células.</p>
 							<!-- colunas clicaveis -->
-							<div class="container-fluid clicavel no-print" aria-hidden="true">
-								<div class="row">
-									<div class="col-sm">
-										<img class="clicavel" onclick="showModallWraper('modal-1')" src="./img/section-4/btn-parede.png" alt="">
-									</div>
-									<div class="col-sm">
-										<img class="clicavel" onclick="showModallWraper('modal-2')" src="./img/section-4/btn-mebrana.png" alt="">
-									</div>
-								</div>
-							</div>
-							<!-- colunas clicaveis -->
 							<div class="acessivel">
 								<h4>Parede celular</h4>
 								<p>As células são caracterizadas não somente por seu conteúdo e organização interna, mas também por uma complexa mistura de materiais extracelulares que, nas plantas, é referida como parede celular (presente somente nas células vegetais). Essa parede é constituída principalmente de carboidratos, proteínas e algumas substâncias complexas.</p>
@@ -257,6 +256,19 @@
 								<p>Difusão simples: Transporte de soluto entre membranas celulares.</p>
 								<p>Difusão facilitada: Transporte de soluto entre membranas celulares com um canal facilitador, que é uma proteína.</p>
 							</div>
+
+							<p>Clique ou toque para visualizar o conteúdo.</p>
+							<div class="container-fluid clicavel no-print" aria-hidden="true">
+								<div class="row">
+									<div class="col-sm">
+										<img class="clicavel" onclick="showModallWraper('modal-1')" src="./img/section-4/btn-parede.png" alt="">
+									</div>
+									<div class="col-sm">
+										<img class="clicavel" onclick="showModallWraper('modal-2')" src="./img/section-4/btn-mebrana.png" alt="">
+									</div>
+								</div>
+							</div>
+							<!-- colunas clicaveis -->
 						</div>
 						<!-- section 4 -->
 
@@ -265,15 +277,19 @@
 							<h3>Síntese proteica</h3>
 							<p>A síntese proteica é o processo pelo qual a célula produz proteínas e consome mais energia da célula do que qualquer outro processo metabólico. Por sua vez, as proteínas representam mais massa do que qualquer outro componente de organismos vivos (com exceção da água) e desempenham praticamente todas as funções de uma célula.</p>
 							<p>A síntese proteica é o processo realizado pelos ribossomos para produzir proteínas a partir de moléculas de RNA (material genético). É por meio desse processo que as células sintetizam suas proteínas. A produção de proteínas pode ser resumida em três fases: transcrição, ativação e tradução, conforme será observado a seguir.</p>
-							<figure aria-hidden="true">
-								<img class="responsive" src="./img/section-5/info.png" alt="">
-							</figure>
 							<!-- acessivel  -->
 							<div class="acessivel">
 								<p>Transcrição: A RNA polimerase liga-se a uma extremidade da molécula de DNA do gene.</p>
 								<p>Ativação: O RNA transportador leva os aminoácidos que estão soltos no citoplasma até o ribossomo.</p>
 								<p>Tradução: O RNA mensageiro é decodificado pelo ribossomo.</p>
 							</div>
+							<figure class="infografico-desk" aria-hidden="true">
+								<img class="responsive " src="./img/section-5/info.png" alt="">
+							</figure>
+							<figure class="infografico-mobi" aria-hidden="true">
+								<img class="responsive " src="./img/section-5/responsive-info.png" alt="">
+							</figure>
+
 						</div>
 						<!-- section 5 -->
 
@@ -319,7 +335,8 @@
 
 						<!-- section 8 -->
 						<div class="section" id="eight">
-							<h3>Células-tronco</h3>
+							<h3>Noções sobre células-tronco e clonagem</h3>
+							<h4> Células-tronco</h4>
 							<div class="row">
 								<div class="col-md-6">
 									<p>São células com a capacidade de se diferenciar em outros tipos de células. Uma célula-tronco pode, por exemplo, dar origem a uma célula muscular ou, dependendo do estímulo, dar origem a uma célula do fígado ou um neurônio. Esse potencial tem muito interesse para a medicina. Imagine poder produzir um órgão interior a partir de células-tronco e assim não precisar mais de transplante.</p>
@@ -332,14 +349,23 @@
 							<h4>Clonagem</h4>
 							<p>É um processo de reprodução assexuada no qual um ser vivo dá origem a outros seres vivos geneticamente idênticos. Esses organismos gerados por clonagem são chamados de clones. </p>
 							<div class="box radius">
-								<p>A clonagem mais famosa é a da ovelha Dolly. Em 1996, na Escócia, Dolly foi o primeiro mamífero a ser clonado com sucesso a partir de uma célula somática adulta. Porém é comum ocorrer em bactérias, protozoários, plantas e até mesmo em animais. Ocorre de forma natural nos seres unicelulares (bactérias, certos fungos, protozoários) e em seres pluricelulares, como vegetais com capacidade de se propagar por meio de “brotos”. A vantagem da clonagem vegetal, também chamada propagação vegetativa, é a manutenção das características vantajosas da espécie do ponto de vista comercial, como formato, resistência e sabor, já que os clones são geneticamente idênticos à planta-mãe. Existem alguns tipos e diferentes exemplos de clonagem, conforme você verá a seguir. <img class="responsive" src="./img/section-8/dolly.gif" alt=""> </p>
-								<img class="icon" src="./img/template/icon-refletir.png" alt="icone de reflexão">
+								<p>A clonagem mais famosa é a da ovelha Dolly. Em 1996, na Escócia, Dolly foi o primeiro mamífero a ser clonado com sucesso a partir de uma célula somática adulta. Porém é comum ocorrer em bactérias, protozoários, plantas e até mesmo em animais. Ocorre de forma natural nos seres unicelulares (bactérias, certos fungos, protozoários) e em seres pluricelulares, como vegetais com capacidade de se propagar por meio de “brotos”. A vantagem da clonagem vegetal, também chamada propagação vegetativa, é a manutenção das características vantajosas da espécie do ponto de vista comercial, como formato, resistência e sabor, já que os clones são geneticamente idênticos à planta-mãe. Existem alguns tipos e diferentes exemplos de clonagem, conforme você verá a seguir. <img class="responsive dolly no-print" src="./img/section-8/dolly.gif" alt=""> </p>
+								<img class="icon no-print" src="./img/template/icon-refletir.png" alt="icone de reflexão">
 							</div>
 
-							<p>Clique ou toque para visualizar o conteúdo.</p>
-							
+							<p aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+							<div class="acessivel">
+								<p>Clonagem natural</p>
+								<p>Caso de gêmeos univitelinos, seres idênticos que possuem o mesmo genoma.</p>
+								<p>Clonagem induzida</p>
+								<p>Reprodução assexuada realizada artificialmente em laboratório por meio de duas células-mães, que produzirão seus clones.</p>
+								<p>Clonagem reprodutiva</p>
+								<p>Processo de reprodução assexuada por meio de células somáticas, ou seja, qualquer célula do corpo (exceto os gametas sexuais: óvulo e espermatozóide).</p>
+								<p>Clonagem terapêutica</p>
+								<p>Técnica utilizada para a reprodução de células-tronco, muito semelhante à clonagem reprodutiva, porém não é introduzida no útero.</p>					
+							</div>
 							<!-- gaitinha -->
-							<div class="accordion" id="accordionExample">
+							<div class="accordion no-print" aria-hidden="true" id="accordionExample">
 								<!-- item -->
 								<div class="accordion-item">
 									<h2 class="accordion-header" id="headingOne">
@@ -407,10 +433,10 @@
 								<p>A fotossíntese consiste na captura da energia na luz e o aproveitamento dessa energia para sintetizar moléculas de glicose (energia). É realizada por algas e plantas e é fonte de energia para as cadeias alimentares. O significado de fotossíntese é “síntese a partir da luz” e é graças a esse processo que existe a produção do gás oxigênio e de alimentos para todos os seres vivos.</p>
 								<p>Todas as células necessitam de energia para manter seu funcionamento e, para isso, utilizam um processo chamado de respiração celular para oxidar, quebrar e retirar a energia contida em moléculas como a glicose. Esse processo é fundamental para os seres vivos utilizarem-se dessa energia para seus processos vitais.</p>
 							</div>
-							<p>
-								Faltam 2 videos (verificar audiovisual)
-							</p>
+							<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/L596WlsNTh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+							<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/_VRM2_3UkC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 						</div>
+
 						<!-- section 9 -->
 
 						<!-- section 10 -->
@@ -418,6 +444,8 @@
 							<h3>Principais tecidos animais e vegetais</h3>
 							<p>Tecido é uma massa organizada de células com a função específica de formar uma parte distinta de uma planta ou um animal. Resulta de um processo de diferenciação celular, no qual certos genes são ativados e outros inativados. Essa expressão diferencial de genes interfere no formato e no conteúdo das células. </p>
 							<p aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+
+							<!-- Nav tabs -->
 							<div class="acessivel">
 								<h4>Tecido animal</h4>
 								<p>Os tecidos animais podem ser divididos em 4 tipos: epitelial, conjuntivo, muscular e nervoso.</p>
@@ -439,7 +467,6 @@
 									<figcaption>Fonte: https://brasilescola.uol.com.br/biologia/tecidos-vegetais.htm. Acesso em: 4 jan. 2022.</figcaption>
 								</figure>
 							</div>
-							<!-- Nav tabs -->
 							<div class="template-tabs no-print" aria-hidden="true">
 								<ul class="nav nav-tabs" id="myTab" role="tablist">
 									<li class="nav-item" role="presentation">
@@ -492,13 +519,13 @@
 									<!-- audio -->
 									<div class="audio-container">
 										<div class="audio-progress" id="progress"></div>
-										<audio id="audio" src="https://www.freesound.org/data/previews/338/338825_1648170-lq.mp3"></audio>
+										<audio id="audio" src="./assets/audio/audio1.mp3"></audio>
 										<button id="audio-btn" class="togglePlay" onClick="togglePlay('audio-btn', 'audio', 'progress')"></button>
 									</div>
 									<!-- audio -->
 								</div>
 								<div class="col-4">
-									<figure><img class="responsive transcricao" onclick="showModallWraper('transci-1')" src="./img/section-11/Ico_transcricao.png" alt=""></figure>
+									<figure><img class="responsive transcricao no-print" onclick="showModallWraper('transci-1')" src="./img/section-11/Ico_transcricao.png" alt=""></figure>
 								</div>
 							</div>
 							<p>
@@ -508,13 +535,13 @@
 						
 							<div class="row">
 								<div class="col-4">
-									<figure><img class="responsive transcricao" onclick="showModallWraper('transci-2')" src="./img/section-11/Ico_transcricao.png" alt=""></figure>
+									<figure><img class="responsive transcricao no-print" onclick="showModallWraper('transci-2')" src="./img/section-11/Ico_transcricao.png" alt=""></figure>
 								</div>
 								<div class="col-8">
 									<!-- audio -->
 									<div class="audio-container">
 										<div class="audio-progress" id="progress2"></div>
-										<audio id="audio2" src="https://www.freesound.org/data/previews/338/338825_1648170-lq.mp3"></audio>
+										<audio id="audio2" src="./assets/audio/audio2.mp3"></audio>
 										<button id="audio-btn2" class="togglePlay" onClick="togglePlay('audio-btn2', 'audio2', 'progress2')"></button>
 									</div>
 									<!-- audio -->
@@ -525,8 +552,9 @@
 							<p>Alguns cientistas costumam dizer que a biotecnologia não pode ultrapassar os limites da ética. Isso porque trabalhar com organismos vivos requer cuidado e padrões de biossegurança muito exigidos pelos órgãos que regulamentam essas atividades no país.</p>
 							<div class="box">
 								<p>Na relação entre biotecnologia e meio ambiente, é possível aliar diferentes tecnologias que permitam conservar o solo, economizar água e proteger os <em>habitats </em>e a biodiversidade, pois o uso da biotecnologia na agricultura não apenas ajuda a garantir a produção de alimentos no século XXI, como também melhora a qualidade de vida e a saúde dos agricultores. Aumentar a produtividade de maneira sustentável requer a concentração de esforços para tornar a agricultura ambientalmente correta e economicamente dinâmica. </p>
-								<img class="icon" src="./img/template/icon-refletir.png" alt="icone de reflexão">
+								<img class="icon no-print" src="./img/template/icon-refletir.png" alt="icone de reflexão">
 							</div>
+							<p>Dessa forma, é possível entender e compreender as diferentes formas que os seres vivos estão inseridos no dia a dia e como estudá-los. Atribuir-lhes uma importância conecta-os ao mundo, deixando as pessoas mais abertas a novas descobertas e conhecimentos — científicos ou não.</p>
 						</div>
 						<!-- section 11 -->
 
@@ -543,6 +571,9 @@
 					<!-- fim pagina 12 -->
         </section>
     </section>
+
+		<img id="open-main-menu" src="img/template/open-menu.png" />
+		<img src="./img/template/print.png" data-pdf="true"  class="bto-imprimir no-print"> 
 
 		<!-- The Modal -->
 		<div id="myModal" class="lab-modal no-print" aria-hidden="true">
@@ -564,28 +595,28 @@
 					<div style="max-width: 100%;margin-top: 11%;">
 						<div class="owl-carousel no-print">
 							<div class="item">
-								<img class="org-big" src="./img/lab/01.png" alt="">
+								<img class="org-big" src="./img/lab/01.1.png" alt="">
 							</div>
 							<div class="item">
-								<img class="org-big" src="./img/lab/02.png" alt="">
+								<img class="org-big" src="./img/lab/02.2.png" alt="">
 							</div>
 							<div class="item">
-								<img class="org-big" src="./img/lab/03.png" alt="">
+								<img class="org-big" src="./img/lab/03.3.png" alt="">
 							</div>
 							<div class="item">
-								<img class="org-big" src="./img/lab/04.png" alt="">
+								<img class="org-big" src="./img/lab/04.4.png" alt="">
 							</div>
 							<div class="item">
-								<img class="org-big five" src="./img/lab/05.png" alt="">
+								<img class="org-big five" src="./img/lab/05.5.png" alt="">
 							</div>
 							<div class="item">
-								<img class="org-big" src="./img/lab/06.png" alt="">
+								<img class="org-big" src="./img/lab/06.6.png" alt="">
 							</div>
 							<div class="item">
-								<img class="org-big" src="./img/lab/07.png" alt="">
+								<img class="org-big" src="./img/lab/07.7.png" alt="">
 							</div>
 							<div class="item">
-								<img class="org-big" src="./img/lab/08.png" alt="">
+								<img class="org-big" src="./img/lab/08.8.png" alt="">
 							</div>
 						</div>
 						<img class="close-micro" src="./img/lab/close-micro.png" alt="">

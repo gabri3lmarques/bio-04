@@ -124,6 +124,9 @@
   padding-right: 0.75em;
   border: 2px groove (internal value);	
   }
+  .lab-mobile img {
+    width: 50%;
+  }
   .pagina figcaption	{
   display: block;	
   }

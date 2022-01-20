@@ -1,6 +1,6 @@
 .audio-container {
   width: calc(100% - 90px);
-  height: 10px;
+  height: 6px;
   background: #ffd500;
   position: relative;
   margin-left: 90px;
@@ -9,7 +9,7 @@
 
 .audio-progress {
   width: 0px;
-  height: 10px;
+  height: 6px;
   background: #2d92c0;
   transition: width 0.1s linear;
 }
@@ -17,13 +17,14 @@
 .togglePlay {
   border: 0;
   background-image: url(../../img/section-11/play.png);
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
+  background-size: 100%;
   transition: 300ms;
   background-color: transparent;
   position: absolute;
-  top: -41px;
-  left: -89px;
+  top: -30px;
+  left: -60px;
 }
 
 .togglePlay:hover {
@@ -36,7 +37,7 @@
 
 .transcricao {
   margin-top: 40px;
-  width: 150px;
+  width: 100px;
   transition: 300ms;
 }
 

@@ -104,3 +104,17 @@ panelButtons[2].addEventListener("click", function(event){
   document.getElementById("panel-modal").insertAdjacentHTML('beforeEnd', '<p>Estrutura que reveste, protege e delimita as células. É responsável pela passagem, entrada e saída de substâncias na célula.</p>');
 });
 
+var menuBTN = document.getElementById("open-main-menu");
+var mainMenu = document.querySelector(".main-menu");
+var closeMenuBTN = document.getElementById("close-main-menu");
+
+
+menuBTN.addEventListener("click", function(){
+  mainMenu.style.marginLeft = "100%";
+  mainMenu.style.opacity = "1";
+})
+
+closeMenuBTN.addEventListener("click", function(){
+  mainMenu.style.marginLeft = "0";
+  mainMenu.style.opacity = "0";
+})

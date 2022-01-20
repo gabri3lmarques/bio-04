@@ -20,7 +20,7 @@
     }
 }
 .preloader .anim{
-    background-image: url(../img/sesc_preloader.png);
+    background-image: url(../../assets/img/sesc_preloader.png);
     width: 233px;
     height: 233px;
     animation: preloaderAnim 800ms steps(6) infinite;
