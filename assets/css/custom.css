@@ -48,7 +48,7 @@ p {
 .bto-imprimir {
   transition: 300ms;
   position: absolute;
-  top: 43px;
+  top: 210px;
   right: 4vh;
 }
 
@@ -175,8 +175,8 @@ figure {
 
 #open-main-menu {
   position: fixed;
-  top: 40px;
-  left: 40px;
+  top: 214px;
+  left: 14px;
   transition: 300ms;
   border-radius: 50px;
 }
@@ -733,12 +733,15 @@ div.clicavel img.clicavel:hover {
     gap: unset;
     justify-content: space-between;
   }
+  #open-main-menu {
+    top: 150px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   #open-main-menu {
     width: 50px;
-    top: 20px;
+    top: 120px;
     left: 20px;
   }
   .lab-mobile {
@@ -779,5 +782,31 @@ div.clicavel img.clicavel:hover {
   .nav-tabs .nav-link {
     width: 168px;
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #open-main-menu {
+    width: 50px;
+    top: 100px;
+    left: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  #open-main-menu {
+    width: 50px;
+    top: 70px;
+    left: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  #open-main-menu {
+    width: 50px;
+    top: 50px;
+    left: 15px;
   }
 }
