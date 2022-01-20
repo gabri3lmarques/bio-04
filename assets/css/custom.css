@@ -685,6 +685,18 @@ div.clicavel img.clicavel:hover {
   }
 }
 
+@media only screen and (max-width: 520px) {
+  h3 {
+    font-size: 30px;
+    background-image: url(../../img/template/molecula-titulo.png);
+    background-position: top 20px left;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+    padding-top: 80px;
+    background-size: 50px;
+  }
+}
+
 
 
 @media only screen and (max-width: 1000px) {
