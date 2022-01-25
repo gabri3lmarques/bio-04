@@ -1,3 +1,61 @@
+.arrow-down {
+  position: absolute;
+  bottom: 33%;
+  right: 29%;
+  width: 7vw;
+  animation: UpDown 2s linear infinite;
+  transition: 300ms;
+}
+
+.lamina-1,
+.lamina-2,
+.lamina-3,
+.lamina-4,
+.lamina-5,
+.lamina-6,
+.lamina-7,
+.lamina-8 {
+  display: none;
+  max-height: 90vh;
+  max-width: 90%;
+}
+
+.close-micros {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 300ms;
+}
+
+.close-micros:hover {
+cursor: pointer;
+transform: scale(1.1);
+}
+
+.lab-micros-wraper {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.arrow-down-two {
+  position: absolute;
+  bottom: 32%;
+  right: 48%;
+  width: 3vw;
+  animation: UpDown2 1.5s linear infinite;
+  transition: 300ms;
+  display: none;
+}
 
 .lab-btn-container {
   width: 631px;
@@ -30,6 +88,24 @@
   background-color: #2d92c0;
   margin-top: -20px;
   box-shadow: 0 10px 10px -5px rgba(0,0,0,0.6);
+}
+
+/* organelas small */
+.organela-small {
+  opacity: 0;
+  position: absolute;
+  top: 71%;
+  left: 49%;
+  width: 4vw;
+  transition: 300ms;
+  pointer-events: none;
+}
+
+/* organelas small */
+.organela-small:hover {
+  cursor: pointer;
+  pointer-events: none;
+  transform: scale(1.1);
 }
 
 /* lab modal */
@@ -125,7 +201,6 @@
   width: 4.5vh;
 }
 
-
 .title-lab {
   color: #004f53;
   font-size: 3vw;
@@ -145,12 +220,13 @@
 .warning-lab {
   background-color: #3f3f3f;
   color: #fff;
-  padding: 5px;
+  padding: 10px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 5%;
   transition: 2s;
+  border-radius: 4px;
 }
 
 .microscopio-overlay {
@@ -230,6 +306,25 @@
 @keyframes animateout {
   from {top:0; opacity:1}
   to {top:-300px; opacity:0}
+}
+
+
+@keyframes UpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes UpDown2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
 }
 
 /* The Close Button */

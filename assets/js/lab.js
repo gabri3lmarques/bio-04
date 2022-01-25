@@ -34,11 +34,7 @@ btn.onclick = function() {
   modal.style.display = "block";
   bubbles.load();
   bubbles.play();
-  labContent.style.height = labwidth.offsetHeight + "px";
-  setTimeout(() => {
-    warningLab.style.opacity = "0"
-  }, 5000);
-  
+  labContent.style.height = labwidth.offsetHeight + "px";  
 }
 
 span.onclick = function() {
@@ -59,10 +55,10 @@ window.addEventListener ('keypress', function () {
   warningLab.style.opacity = "1"
 });
 
-closeMicro.addEventListener("click", function(event){
-  microscopioLayer.style.opacity = "0";
-  microscopioLayer.style.pointerEvents = "none";
-});
+// closeMicro.addEventListener("click", function(event){
+//   microscopioLayer.style.opacity = "0";
+//   microscopioLayer.style.pointerEvents = "none";
+// });
 
 //armazena o som do lab
 var bubbles = document.getElementById("audio-player"); 
@@ -72,53 +68,84 @@ window.addEventListener("resize", function(){
   console.log(labContent.style.height )
 });
 
-organela1.addEventListener("click", function(event){
-  microscopioLayer.style.opacity = "1";
-  microscopioLayer.style.pointerEvents = "auto";
-  owl.trigger('to.owl.carousel', [0]);
-})
+var allOrganelas = document.querySelectorAll('.organela-small');
 
-organela2.addEventListener("click", function(event){
-  microscopioLayer.style.opacity = "1";
-  microscopioLayer.style.pointerEvents = "auto";
-  owl.trigger('to.owl.carousel', [1]);
-})
+function setOrganela(cssClass) {
+  [].forEach.call(allOrganelas, function(organela) {
+    organela.style.transition = "0ms";
+    organela.style.opacity = 0;
+    organela.style.pointerEvents = "none";
+  });
 
-organela3.addEventListener("click", function(event){
-  microscopioLayer.style.opacity = "1";
-  microscopioLayer.style.pointerEvents = "auto";
-  owl.trigger('to.owl.carousel', [2]);
-})
+  document.querySelector(".arrow-down-two").style.display = "block";
+  document.querySelector("."+cssClass).style.transition = "300ms";
+  document.querySelector("."+cssClass).style.opacity = "1";
+  document.querySelector("."+cssClass).style.pointerEvents = "auto";
+}
 
-organela4.addEventListener("click", function(event){
-  microscopioLayer.style.opacity = "1";
-  microscopioLayer.style.pointerEvents = "auto";
-  owl.trigger('to.owl.carousel', [3]);
-})
+var laminas = document.querySelectorAll('.lamina');
 
-organela5.addEventListener("click", function(event){
-  microscopioLayer.style.opacity = "1";
-  microscopioLayer.style.pointerEvents = "auto";
-  owl.trigger('to.owl.carousel', [4]);
-})
+function opanOrganelaModal(cssClass){
+  [].forEach.call(laminas, function(lamina) {
+    lamina.style.display = "none";
+  });
+  document.querySelector(".lab-micros-wraper").style.opacity = "1";
+  document.querySelector(".lab-micros-wraper").style.pointerEvents = "auto";
+  document.querySelector("."+cssClass).style.display = "block";
+}
 
-organela6.addEventListener("click", function(event){
-  microscopioLayer.style.opacity = "1";
-  microscopioLayer.style.pointerEvents = "auto";
-  owl.trigger('to.owl.carousel', [5]);
-})
+function closeOrgModal(){
+  document.querySelector(".lab-micros-wraper").style.opacity = "0";
+  document.querySelector(".lab-micros-wraper").style.pointerEvents = "none";
+}
 
-organela7.addEventListener("click", function(event){
-  microscopioLayer.style.opacity = "1";
-  microscopioLayer.style.pointerEvents = "auto";
-  owl.trigger('to.owl.carousel', [6]);
-})
+// organela1.addEventListener("click", function(event){
+//   microscopioLayer.style.opacity = "1";
+//   microscopioLayer.style.pointerEvents = "auto";
+//   owl.trigger('to.owl.carousel', [0]);
+// })
 
-organela8.addEventListener("click", function(event){
-  microscopioLayer.style.opacity = "1";
-  microscopioLayer.style.pointerEvents = "auto";
-  owl.trigger('to.owl.carousel', [7]);
-})
+// organela2.addEventListener("click", function(event){
+//   microscopioLayer.style.opacity = "1";
+//   microscopioLayer.style.pointerEvents = "auto";
+//   owl.trigger('to.owl.carousel', [1]);
+// })
+
+// organela3.addEventListener("click", function(event){
+//   microscopioLayer.style.opacity = "1";
+//   microscopioLayer.style.pointerEvents = "auto";
+//   owl.trigger('to.owl.carousel', [2]);
+// })
+
+// organela4.addEventListener("click", function(event){
+//   microscopioLayer.style.opacity = "1";
+//   microscopioLayer.style.pointerEvents = "auto";
+//   owl.trigger('to.owl.carousel', [3]);
+// })
+
+// organela5.addEventListener("click", function(event){
+//   microscopioLayer.style.opacity = "1";
+//   microscopioLayer.style.pointerEvents = "auto";
+//   owl.trigger('to.owl.carousel', [4]);
+// })
+
+// organela6.addEventListener("click", function(event){
+//   microscopioLayer.style.opacity = "1";
+//   microscopioLayer.style.pointerEvents = "auto";
+//   owl.trigger('to.owl.carousel', [5]);
+// })
+
+// organela7.addEventListener("click", function(event){
+//   microscopioLayer.style.opacity = "1";
+//   microscopioLayer.style.pointerEvents = "auto";
+//   owl.trigger('to.owl.carousel', [6]);
+// })
+
+// organela8.addEventListener("click", function(event){
+//   microscopioLayer.style.opacity = "1";
+//   microscopioLayer.style.pointerEvents = "auto";
+//   owl.trigger('to.owl.carousel', [7]);
+// })
 
 
 

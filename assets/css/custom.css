@@ -558,6 +558,14 @@ div.clicavel img.clicavel:hover {
   width: 560px;
   height: 315px;
 }
+
+.relative {
+  position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* animações */
 
 @keyframes MoveUpDown {
